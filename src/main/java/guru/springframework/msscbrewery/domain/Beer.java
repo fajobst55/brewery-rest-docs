@@ -1,5 +1,6 @@
 package guru.springframework.msscbrewery.domain;
 
+import com.fasterxml.jackson.annotation.JsonTypeId;
 import guru.springframework.msscbrewery.web.model.v2.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +17,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
 public class Beer {
+
     private UUID id;
     private String beerName;
     private BeerStyleEnum beerStyle;
